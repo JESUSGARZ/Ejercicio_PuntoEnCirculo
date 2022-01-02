@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto en circulo</title>
+    <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+      <h1>Punto dentro de una circunferencia</h1>
+      <div>
+        <label for="radio">Introduce el radio de la circunferencia</label>
+        <input type="number" id="radio">
+      </div>
+      <div>
+        <p>Ahora Introduce el punto que quieres evaluar</p>
+        <label for="x">X</label>
+        <input type="number" name="x" id="x">
+        <label for="y">Y</label>
+        <input type="number" name="y" id="y">
+      </div>
+      <button onclick="graphCircle()">Calcular</button>
+      <div id="container">
+          <canvas id="fx" width="0" height="0"></canvas>
+          <p id="result"></p>
+      </div>
+</body>
+<script src="./index.js"></script>
+</html>
